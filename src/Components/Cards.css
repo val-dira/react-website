@@ -1,0 +1,128 @@
+
+.cards {
+    padding: 10rem;
+    background: #fff;
+}
+
+h1.cards-header{
+    text-align: center;
+}
+
+
+.cards__items {
+    /* max-width: 80%; */
+    max-width: 1000px;
+    display: flex;
+    gap: 1em;
+    margin-inline: auto;
+    margin-top: 1em;
+}
+
+.cards__item {
+    list-style-type: none;
+    background-color: #fff;
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.card__item__pic-wrap {
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.image__label__div {
+    position: relative;
+}
+
+/* .image__label__text {
+    position: absolute;
+    bottom: 7px;
+    margin-left: 10px;
+    padding: 6px 8px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #1f98f4;
+    border-radius: 3px;
+    box-sizing: border-box;
+    cursor: pointer;
+} */
+
+.favourite-icon {
+    position: absolute;
+    bottom: 3px;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    padding: 6px 8px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    color: #fff;
+    background-color: #1f98f4;
+    border-radius: 3px 0 0 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.fa-solid {
+    color: #fff;
+}
+
+.cards__item__img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    transition: all 0.6s linear;
+}
+
+.cards__item__img:hover {
+    transform: scale(1.1);
+}
+
+.cards__item__info {
+    padding: 15px;
+}
+
+.cards__item__text {
+    font-size: 0.65rem;
+}
+
+
+@media only screen and (max-width: 820px) {
+    .Cards {
+        padding: 5rem;
+    }
+
+    .cards__items {
+        flex-direction: column;
+    }
+
+    .Cards h1 {
+        font-size: 2.7rem;
+    }
+
+    .cards__item__text {
+        font-size: 1.1rem;
+    }
+}
+
+
+@media only screen and (max-width: 390px) {
+    .cards {
+        padding: 3rem!important;
+    }
+
+    .cards h1 {
+        font-weight: 1.2rem;
+    }
+}
+
+
+
+
